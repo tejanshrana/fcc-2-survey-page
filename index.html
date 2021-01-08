@@ -1,0 +1,80 @@
+<head>
+  <link href="resources/css/style.css" rel="stylesheet" />
+</head>
+<div class="container">
+  <div class="header">
+    <header class="header">
+      <h1 id="title">Live Coding Survey</h1>
+      <p id="description">
+        Tell us what would you like to watch us build live
+      </p>
+    </header>
+  </div>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name" class="label">Name : </label>
+      <input type="text" name="name" id="name" class="inset-input" placeholder="Enter your name" required />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email" class="label">Email : </label>
+      <input type="email" name="email" id="email" class="inset-input" placeholder="Enter your email" required />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number" class="label">Years of coding experience (Optional) : </label>
+      <input type="number" name="number" id="number" min="0" max="30" class="inset-input"
+        placeholder="Enter your experience" />
+    </div>
+    <div class="form-group">
+      <label class="label">Occupation:</label>
+      <select id="dropdown" name="dropdown" class="inset-input" required>
+        <option id="select-option" disabled selected value>Select an option</option>
+        <option id="select-itmgm" value="IT - Management">Challenges</option>
+        <option id="select-ittech" value="IT - Technical">Projects</option>
+        <option id="select-nonit" value="Non IT">Community</option>
+        <option id="select-nonit" value="Student">Open Source</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <p class="label">What would you like to watch in our stream?</p>
+      <label class="left-aligned">
+        <input name="stream-choice" value="fs-coding" type="radio" class="inset-radio" checked />Full stack
+        coding</label>
+      <label class="left-aligned">
+        <input name="stream-choice" value="end-to-end" type="radio" class="inset-radio" />End to end process</label>
+
+      <label class="left-aligned"><input name="stream-choice" value="devops" type="radio" class="inset-radio" />DevOps
+        Stuff</label>
+      <label class="left-aligned"><input name="stream-choice" value="frontend" type="radio"
+          class="inset-radio" />Frontend Stuff</label>
+      <label class="left-aligned"><input name="stream-choice" value="backend" type="radio" class="inset-radio" />Backend
+        Stuff</label>
+    </div>
+    <div class="form-group">
+      <p class="label">
+        What other format would you prefer the content in?
+      </p>
+
+      <label class="left-aligned"><input name="content-choice" value="blogs" type="checkbox"
+          class="inset-radio" />Blogs</label>
+      <label class="left-aligned"><input name="content-choice" value="yt" type="checkbox" class="inset-radio" />Youtube
+        Videos</label>
+      <label class="left-aligned"><input name="content-choice" value="tutorials" type="checkbox"
+          class="inset-radio" />Tutorials</label>
+      <label class="left-aligned"><input name="content-choice" value="news-letter" type="checkbox"
+          class="inset-radio" />News letters</label>
+    </div>
+    <div class="form-group">
+      <p class="label">Anything else you'd like to let us know?</p>
+      <textarea id="comments" class="inset-input input-textarea" name="comment"
+        placeholder="Enter your comment here..."></textarea>
+    </div>
+
+    <div>
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+
+  </form>
+</div>
+</div>
